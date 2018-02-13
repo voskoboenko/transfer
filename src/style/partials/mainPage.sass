@@ -1,0 +1,465 @@
+.hero
+  background: url(../img/heroBG.png) center bottom no-repeat
+  background-size: cover
+  padding-bottom: 160px
+  padding-top: 60px
+  position: relative
+  .button-down
+    display: block
+    position: absolute
+    bottom: 50px
+    left: 0
+    right: 0
+    margin: auto
+    width: 53px
+  form
+    padding-left: 15px
+    padding-right: 15px
+    background: rgba(100, 100, 100, 0.52)
+    padding-top: 20px
+    padding-bottom: 20px
+    select
+      display: block
+      width: 100%
+      padding: 4px
+    label.arrow
+      position: absolute
+      right: 0
+      bottom: 0
+      margin-bottom: 0 !important
+    .section-title
+      margin: 0 auto 30px
+      font-family: 'Exo2-Medium'
+      font-size: 23px
+      text-align: center
+      min-height: 40px
+      max-width: 380px
+      padding-top: 6px
+      padding-bottom: 6px
+      border: 1px solid white
+      color: white
+      position: relative
+      padding-left: 35px
+      padding-right: 35px
+      &:after
+        top: 0
+        bottom: 0
+        margin: auto
+        height: 1px
+        width: 15px
+        content: ""
+        display: block
+        background: white
+        position: absolute
+        right: 18px
+      &:before
+        top: 0
+        bottom: 0
+        margin: auto
+        height: 1px
+        width: 15px
+        content: ""
+        display: block
+        background: white
+        position: absolute
+        left: 18px
+    .fields
+      padding-left: 15px
+      padding-right: 15px
+      .field-container
+        position: relative
+      @media(max-width: 1199px)
+        padding-left: 0px
+        padding-right: 0px
+    label
+      color: white
+      font-size: 13px
+      @media(max-width: 1199px)
+        font-size: 11px
+    .dropdown
+      margin-bottom: 12px
+      button
+        border-radius: 2px
+        color: rgba(0, 0, 0, 0.76)
+        background: white
+        border: 0px solid black
+        display: block
+        width: 100%
+        text-align: left
+        padding: 0
+        height: 29px
+        line-height: 29px
+        position: relative
+        padding-left: 10px
+        img
+          position: absolute
+          right: 0
+          top: 0
+          bottom: 0
+          margin: auto
+      .dropdown-menu
+        max-height: 250px
+        overflow-y: scroll
+    .datetime
+      margin-bottom: 12px
+      .field
+        .input-container
+          margin-right: 40px
+          input
+            display: block
+            width: 100%
+            border: none
+            height: 29px
+            padding-left: 10px
+        label 
+          float: right
+          width: 32px
+          position: relative
+          top: -3px
+    .dropdown-three
+      margin-top: -5px
+      display: flex
+      justify-content: space-between
+      label
+        font-size: 10px
+        margin-bottom: 7px !important
+        &.arrow
+          margin-bottom: 0px !important
+        @media(max-width: 600px)
+          height: 20px
+      .field
+        position: relative
+        width: 28%
+        @media(max-width: 1199px)
+          width: 29%
+    .fields-fields
+      display: flex
+      justify-content: space-between
+      .field
+        width: 28%
+        @media(max-width: 1199px)
+          width: 29%
+        .input-container
+          label
+            float: left
+            width: 32px
+            position: relative
+            top: -3px
+          .input
+            margin-left: 37px
+            input
+              display: block
+              width: 100%
+              border: none
+              height: 29px
+              text-align: center
+    .black-field
+      display: flex
+      justify-content: space-between
+      .field
+        width: 45%
+        @media(max-width: 500px)
+          width: 48%
+        .inputs
+          background: rgba(0, 0, 0, 0.39)
+          height: 29px
+          line-height: 29px
+          display: flex
+          justify-content: space-between
+          padding-left: 10px
+          padding-right: 10px
+          input
+            position: relative
+            top: -5px
+            &[type="radio"]
+              top: 2px
+    .black-field2
+      .field
+        .inputs
+          background: rgba(0, 0, 0, 0.39)
+          height: 29px
+          line-height: 29px
+          display: flex
+          justify-content: space-between
+          padding-left: 10px
+          padding-right: 10px
+          input
+            position: relative
+            top: 3px
+    .buttons
+      margin-top: 25px
+      display: flex
+      text-align: center
+      justify-content: space-around
+      color: white
+      @media(max-width: 767px)
+        flex-direction: column
+        align-items: center
+      span
+        font-size: 13px
+        padding: 10px
+      .button-container
+        max-width: 350px
+        button
+          padding: 0
+          border: none
+          margin-bottom: 15px
+        p
+          font-size: 12px
+          
+.features
+  padding-bottom: 50px
+  padding-top: 35px
+  .section-title
+    font-size: 20px
+    color: #86a236
+    font-family: 'Exo2-Light'
+    border: 1px solid #86a236
+    margin: 0 auto 50px
+    height: 40px
+    max-width: 380px
+    position: relative
+    text-align: center
+    line-height: 38px
+    &:after
+      display: block
+      position: absolute
+      border-bottom: 1px solid #86a236
+      border-right: 1px solid #86a236
+      height: 30px
+      width: 30px
+      content: ""
+      right: -10px
+      bottom: -10px
+    &:before
+      display: block
+      position: absolute
+      border-top: 1px solid #86a236
+      border-left: 1px solid #86a236
+      height: 30px
+      width: 30px
+      content: ""
+      top: -10px
+      left: -10px
+  .feature
+    margin-bottom: 50px
+    p
+      width: 168px
+      height: 33px
+      line-height: 33px
+      text-align: center
+      color: white
+      font-size: 17px
+      font-family: 'Exo2-Medium'
+      background: url(../img/featureBG.png) center no-repeat
+      margin: 0 auto 30px
+    img
+      margin: auto
+      
+      
+.ways
+  padding-bottom: 75px
+  background: url(../img/wayBG.png) center bottom no-repeat
+  background-size: cover
+  .section-title
+    color: #5d9f9b
+    font-family: 'Exo2-Light'
+    border: 1px solid #5d9f9b
+    margin: 0 auto 50px
+    max-width: 380px
+    position: relative
+    text-align: center
+    line-height: 38px
+    font-size: 20px
+    &:after
+      display: block
+      position: absolute
+      border-bottom: 1px solid #5d9f9b
+      border-right: 1px solid #5d9f9b
+      height: 30px
+      width: 30px
+      content: ""
+      right: -10px
+      bottom: -10px
+    &:before
+      display: block
+      position: absolute
+      border-top: 1px solid #5d9f9b
+      border-left: 1px solid #5d9f9b
+      height: 30px
+      width: 30px
+      content: ""
+      top: -10px
+      left: -10px
+  .nav-justified
+    border-color: #509f99
+    li
+      a
+        border-bottom-color: #509f99
+        padding-top: 0
+        padding-bottom: 0
+        @media(max-width: 991px)
+          text-align: left
+          border: none
+        span
+          padding-top: 15px
+          padding-bottom: 15px
+          padding-left: 40px
+          color: #717171
+          font-size: 17px
+          font-family: 'Exo2-Light'
+          display: inline-block
+          @media(max-width: 991px)
+            font-size: 14px
+      &:nth-of-type(1) 
+        a span
+          background: url(../img/way1.png) left center no-repeat
+        &.active a span, & a:hover span
+          background: url(../img/way1Active.png) left center no-repeat
+      &:nth-of-type(2) 
+        a span
+          background: url(../img/way2.png) left center no-repeat
+        &.active a span, & a:hover span
+          background: url(../img/way2Active.png) left center no-repeat
+      &:nth-of-type(3) 
+        a span
+          background: url(../img/way3.png) left center no-repeat
+        &.active a span, & a:hover span
+          background: url(../img/way3Active.png) left center no-repeat
+      &:focus
+        border-color: #509f99
+        border-bottom: none
+      &
+        a:focus, a:hover
+          border-color: white
+          border-bottom-color: #509f99
+          background: white
+          span
+            color: #509f99
+          @media(max-width: 991px)
+            border: none
+      &.active, &.active:focus
+        a
+          border-color: #509f99
+          border-bottom: none
+          @media(max-width: 991px)
+            border: none
+          span
+            color: #509f99
+            font-family: 'Exo2-Regular'
+      &.active a:focus
+        border-color: #509f99
+        border-bottom: none
+        @media(max-width: 991px)
+          border: none
+      &.active a:hover
+        @media(max-width: 991px)
+          border: none
+  .ways-main
+    border: 1px solid #509f99
+    border-top: none
+    padding: 30px
+    background: white
+    position: relative
+    @media(max-width: 991px)
+      padding: 10px
+      border-top: 1px solid #509f99
+    .tab-content
+      .tab-pane
+        position: relative
+        .map
+          width: 50%
+          @media(max-width: 991px)
+            width: 100%
+        .countries
+          width: 25%
+          position: absolute
+          top: 0
+          right: 0
+          @media(max-width: 991px)
+            position: relative
+            width: auto
+            margin-top: 25px
+            float: left
+          @media(max-width: 600px)
+            float: none
+          .country
+            font-size: 12px
+            position: relative
+            margin-bottom: 3px
+            img
+              float: left
+              display: block
+              margin-right: 10px
+              position: relative
+              top: 3px
+            .name
+              display: inline-block
+              min-width: 120px
+            .price
+              color: #fe792a
+              font-family: 'Exo2-Medium'
+              display: inline-block
+              @media(max-width: 600px)
+                float: right
+    .continents
+      position: absolute
+      right: 25%
+      width: 25%
+      top: 30px
+      padding-left: 2%
+      @media(max-width: 991px)
+        right: 0%
+        width: auto
+        position: static
+        padding-top: 23px
+        float: right
+      @media(max-width: 600px)
+        float: none
+      li
+        a
+          font-size: 12px
+          color: black
+          position: relative
+          padding-left: 10px
+          &:after
+            display: block
+            position: absolute
+            content: ""
+            width: 5px
+            height: 5px
+            background: #acacac
+            border-radius: 10px
+            top: 0
+            bottom: 0
+            margin: auto
+            left: 0
+          &:hover
+            text-decoration: none
+            color: #509f99
+            &:after
+              background: #509f99
+        &.active
+          a
+            text-decoration: none
+            color: #509f99
+            &:after
+              background: #509f99
+            
+            
+.text1
+  padding-top: 50px
+  padding-bottom: 50px
+  
+.text2
+  padding-top: 50px
+  .banner1
+    float: right
+    display: block
+    margin-left: 15px
+    margin-bottom: 15px
+  .banner2
+    float: left
+    display: block
+    margin-right: 15px
+    margin-bottom: 15px

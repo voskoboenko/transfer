@@ -1,0 +1,41 @@
+.lkTransporterActiveApplications
+  .checkboxes
+    display: flex
+    justify-content: space-between
+    
+    @media(max-width: 767px)
+      flex-wrap: wrap
+    .input-container
+      width: 20%
+      @media(max-width: 767px)
+        width: 100%
+      input
+        display: block
+        float: left
+        position: relative
+        top: 5px
+      label
+        display: block
+        margin-left: 20px
+        color: rgba(0, 0, 0, 0.51)
+  .orders
+    .panel-header
+      color: white !important
+      .status
+        width: 370px
+        text-align: right
+        @media(max-width: 991px)
+          width: auto
+          text-align: left
+    .status1>.panel-header
+      background: linear-gradient(to bottom, rgba(126,200,195,1) 0%, rgba(126,200,195,1) 100%, rgb(64, 64, 64) 100%) !important
+    .status2>.panel-header
+      background: linear-gradient(to bottom, rgba(167, 191, 111, 1) 0%, rgba(167, 191, 111, 1) 100%, rgb(64, 64, 64) 100%) !important
+    .status3>.panel-header
+      background: linear-gradient(to bottom, rgba(214, 211, 194, 1) 0%, rgba(214, 211, 194, 1) 100%, rgb(64, 64, 64) 100%) !important
+    .status4>.panel-header
+      background: linear-gradient(to bottom, rgba(178, 215, 73, 1) 0%, rgba(178, 215, 73, 1) 100%, rgb(64, 64, 64) 100%) !important
+    .order
+      @media(max-width: 767px)
+        margin-left: 0px !important
+        margin-right: 0px !important

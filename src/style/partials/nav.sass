@@ -1,0 +1,82 @@
+nav
+  .navbar
+    background: white
+    height: 70px
+    @media(max-width: 991px)
+      height: 50px
+    &-header
+      button
+      a
+        @media(max-width: 991px)
+          padding-top: 0px
+        img
+    &-collapse
+      @media(max-width: 991px)
+        background: white
+      .navbar-nav
+        &.exit
+          float: right
+          @media(max-width: 991px)
+            float: none
+          li
+            a
+              padding-top: 25px
+              padding-bottom: 25px
+              color: #8a8a8a
+              font-family: 'Exo2-MediumItalic'
+              font-size: 15px
+              padding-left: 8px
+              @media(max-width: 1199px)
+                font-size: 12px
+              @media(max-width: 991px)
+                padding-bottom: 0
+              @media(max-width: 991px)
+                padding-top: 10px
+              &:hover
+                color: black
+              img
+                position: relative
+                top: -2px
+                margin-right: 3px
+        &.menu
+          padding-left: 30px
+          padding-top: 3px
+          @media(max-width: 991px)
+            float: right
+          @media(max-width: 991px)
+            float: none
+            padding-left: 8px
+          li
+            ul
+              li
+                a
+                  padding: 3px 10px
+                  &:after
+                    display: none
+            a
+              padding-top: 25px
+              padding-bottom: 25px
+              color: #8a8a8a
+              position: relative
+              padding-left: 8px
+              @media(max-width: 1199px)
+                font-size: 10px
+              @media(max-width: 991px)
+                padding-top: 0px
+                padding-bottom: 0px
+              @media(max-width: 991px)
+                font-size: 12px
+              &:after
+                display: block
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                height: 3px
+                width: 3px
+                border-radius: 10px
+                content: ""
+                margin: auto
+                background: #86a236
+              &:hover
+                color: black

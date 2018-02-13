@@ -1,0 +1,49 @@
+.lkPassengerActiveApplications
+  .orders
+    .buttons
+      padding: 0
+      margin: auto !important
+    .transporters-list
+      padding-bottom: 0
+    .panel-header
+      color: rgba(0, 0, 0, 0.66) !important
+      .redact
+        color: #68a5a0
+        
+.lkPassengerArchiveApplications
+  .order
+    overflow: hidden
+  .orderInformation
+    display: flex
+    justify-content: space-around
+    font-size: 16px
+    color: #848484
+    background: #f8f8f8
+    padding-top: 10px
+    padding-bottom: 10px
+    margin-left: -15px
+    margin-right: -15px
+    margin-bottom: -15px
+    @media(max-width: 991px)
+      flex-direction: column
+      text-align: left
+      padding-left: 15px
+      padding-right: 15px
+      font-size: 13px
+    span
+      color: #68a5a0
+      font-family: 'Exo2-Medium'
+  .panel-header.red
+    &[aria-expanded="false"] 
+      &:after
+        background: url(../img/to-basketRed.png) center no-repeat !important
+        background-size: 100% 100%
+
+    &[aria-expanded="true"] 
+      &:after
+        background: url(../img/to-basketRed.png) center no-repeat !important
+        background-size: 100% 100%
+    .status
+      color: red
+      span
+        color: #9d9d9d

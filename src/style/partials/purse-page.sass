@@ -1,0 +1,97 @@
+.purse-page
+  padding-top: 40px
+  padding-bottom: 40px
+  .section-title
+    margin-bottom: 50px
+  .purse-money
+    font-size: 40px
+    text-align: center
+    background: url(../img/5angle.png) center no-repeat
+    background-size: 100% 100%
+    padding-bottom: 17px
+    padding-top: 8px
+    max-width: 285px
+    margin-bottom: 27px
+    @media(max-width: 991px)
+      margin-left: auto
+      margin-right: auto
+    span
+      color: #b1d254
+  .purse-plus
+    @media(max-width: 991px)
+      display: block
+      text-align: center
+      margin-bottom: 25px
+      img
+        margin-left: auto
+        margin-right: auto
+  .cards
+    display: flex
+    justify-content: space-between
+    margin-bottom: 45px
+    @media(max-width: 767px)
+      flex-wrap: wrap
+    a
+      text-align: center
+      @media(max-width: 767px)
+        width: 33.33333333%
+        margin-bottom: 10px
+  .purse-text
+    border: 1px solid #dadada
+    padding: 10px 25px
+    font-size: 13px
+  .purse-table
+    padding-top: 40px
+    @media(max-width: 991px)
+      overflow-x: scroll
+    .table-row
+      min-width: 900px
+      margin-left: 45px
+      position: relative
+      display: flex
+      border-bottom: 1px solid #e3e3e3
+      padding-top: 25px
+      padding-bottom: 25px
+      &:last-of-type
+        border-bottom: none
+    &-element
+      width: 16.66666667%
+      .blue, .grey, .grey-small
+        display: inline-block
+      .blue, .grey
+        font-size: 15px
+      .grey-small
+        font-size: 11px
+        color: #9d9e9e
+      .blue
+        color: #4b9792
+      .grey
+        color: #9d9e9e
+    .checkbox
+      position: absolute
+      cursor: pointer
+      top: 22px
+      left: -45px
+      &:after
+        width: 20px
+        height: 20px
+        background: url(../img/greenNoOk.png) center no-repeat
+        content: ""
+        display: block
+        position: relative
+        top: -20px
+      &:before
+        width: 20px
+        height: 20px
+        background: white
+        content: ""
+        display: block
+      &:checked
+        &:after
+          width: 20px
+          height: 20px
+          background: url(../img/greenOk.png) center no-repeat
+          content: ""
+          display: block
+    &-header
+    &-row

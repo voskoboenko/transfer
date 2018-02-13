@@ -1,0 +1,186 @@
+.transporter-card-page
+  .transporter-card
+    padding-top: 50px
+    padding-bottom: 30px
+    .section-title
+      margin-bottom: 60px
+    .car-slider
+      max-width: 350px
+      border: 1px solid #4b9792
+      @media(max-width: 991px)
+        margin: 0 auto 35px
+      .tab-content
+        .tab-pane
+          img
+            margin: auto
+      .owl-carousel
+        padding: 15px 20px
+        .item
+          a
+            img
+              opacity: 0.7
+              width: 55px
+              margin: auto
+            &:hover img, &:focus img
+              opacity: 1
+        .owl-nav
+          margin: auto
+          position: static
+          div
+            padding: 0
+            background: transparent
+            font-size: 30px
+            color: #4b9792
+            position: absolute
+            top: 0
+            bottom: 0
+            display: flex
+            align-items: center
+            margin: auto
+          .owl-prev
+            left: 5px
+          .owl-next
+            right: 5px
+    .transporter-information
+      .transporter-information1
+        float: left
+        @media(max-width: 767px)
+          float: none
+          max-width: 350px
+          margin: auto
+        &-element
+          margin-bottom: 10px
+          .title
+            color: #5ba4ae
+            font-size: 13px
+          .content
+            color: #5d5d5d
+            font-size: 15px
+      .transporter-information2
+        float: right
+        width: 350px
+        @media(max-width: 767px)
+          float: none
+          max-width: 350px
+          margin: auto
+          width: auto
+        .quantity
+          .title
+            margin-bottom: 10px
+            color: #5ba4ae
+            font-size: 15px
+          &-elements
+            display: flex
+            justify-content: space-between
+            .element
+              img
+              span
+                position: relative
+                top: 9px
+                color: #777777
+                font-size: 15px
+        .checks
+          display: flex
+          flex-wrap: wrap
+          .check
+            width: 50%
+            margin-top: 35px
+            @media(max-width: 767px)
+              width: 100%
+              margin-top: 15px
+            img
+            span
+              color: #5ba4ae
+              font-size: 15px
+              position: relative
+              top: 3px
+              padding-left: 4px
+      .simple-text
+        clear: both
+        padding-top: 30px
+  .about-transporter
+    .container
+      background: #f7f7f7
+      .section-title
+        padding-top: 20px
+        padding-bottom: 10px
+        position: relative
+        font-size: 19px
+        text-align: center
+        color: #5ba4ae
+        font-family: 'Exo2-Medium'
+        margin-bottom: 20px
+        &:after
+          display: block
+          position: absolute
+          bottom: 0
+          left: 0
+          right: 0
+          content: ""
+          background: #d4d4d4
+          height: 1px
+          width: 110px
+          margin: auto
+      .transporter-photo
+        margin: auto
+      .about-element
+        margin-top: 3px
+        font-size: 15px
+        @media(max-width: 767px)
+          font-size: 13px
+        img
+          @media(max-width: 767px)
+            position: relative
+            top: -3px
+        .title
+          color: #4b9792
+        .value
+          color: #858585
+      .simple-text
+        margin-top: 30px
+  
+  .feedbacks
+    padding-top: 30px
+    .section-title
+      color: grey
+      border: 1px solid grey
+      margin-bottom: 30px
+  .routes
+    padding-top: 70px
+    .section-title
+      margin-bottom: 40px
+      max-width: 200px
+      color: grey
+      border: 1px solid grey
+    .route
+      margin-bottom: 10px
+      justify-content: space-around
+      padding-top: 10px
+      padding-bottom: 10px
+      display: flex
+      border-radius: 3px
+      border: 1px solid #d7d7d7
+      background: #f8f8f8
+      @media(max-width: 767px)
+        flex-direction: column
+        padding-left: 15px
+        padding-right: 15px
+      >*
+        padding-top: 5px
+        padding-bottom: 5px
+        font-family: 'Exo2-Medium'
+      .from
+        color: #707171
+      .to
+        color: #707171
+      .price
+        color: #fe8036
+      .delete
+        color: #d65454
+        img
+    .buttons
+      padding-top: 30px
+      text-align: center
+      padding-bottom: 60px
+      a
+        

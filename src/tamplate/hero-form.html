@@ -1,0 +1,469 @@
+<form action="#" class="hero-form">
+  <h2 class="section-title">ОНЛАЙН БРОНИРОВАНИЕ</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="fields">
+        <div class="field-container">
+          <label for="#">СТРАНА</label>
+          <div class="form-group field-bid-country_id required">
+
+            <select id="bid-country_id" class="" name="country" onchange="$.post( &quot;/site/list-country?id=&quot;+$(this).val(), function( data ) {
+                     $( &quot;select#titl&quot; ).html( data );$( &quot;select#titla&quot; ).html( data );});" aria-required="true">
+<option value=""> Выбрать  страну </option>
+<option value="4">Австрия</option>
+<option value="33">Албания</option>
+<option value="34">Андорра</option>
+<option value="15">Белоруссия</option>
+<option value="5">Бельгия</option>
+<option value="16">Болгария</option>
+<option value="35">Босния и Герцеговина</option>
+<option value="36">Ватикан</option>
+<option value="6">Великобритания</option>
+<option value="17">Венгрия</option>
+<option value="7">Германия</option>
+<option value="37">Греция</option>
+<option value="25">Дания</option>
+<option value="8">Ирландия</option>
+<option value="26">Исландия</option>
+<option value="38">Испания</option>
+<option value="39">Италия</option>
+<option value="27">Латвия</option>
+<option value="28">Литва</option>
+<option value="9">Лихтенштейн</option>
+<option value="10">Люксембург</option>
+<option value="40">Македония</option>
+<option value="41">Мальта</option>
+<option value="18">Молдавия</option>
+<option value="11">Монако</option>
+<option value="12">Нидерланды</option>
+<option value="29">Норвегия</option>
+<option value="19">Польша</option>
+<option value="42">Португалия</option>
+<option value="20">Россия</option>
+<option value="21">Румыния</option>
+<option value="43">Сан-Марино</option>
+<option value="44">Сербия</option>
+<option value="22">Словакия</option>
+<option value="45">Словения</option>
+<option value="24">Украина</option>
+<option value="30">Финляндия</option>
+<option value="13">Франция</option>
+<option value="46">Хорватия</option>
+<option value="47">Черногория</option>
+<option value="23">Чехия</option>
+<option value="14">Швейцария</option>
+<option value="32">Швеция</option>
+<option value="31">Эстония</option>
+</select>
+
+          </div>
+        </div>
+        <div class="field-container">
+          <label for="#">МЕСТО ОТПРАВЛЕНИЯ</label>
+          <div class="dropdown">
+            <div class="form-group field-titl required">
+
+              <select id="titl" class="form-control" name="Bid[from_points]" aria-required="true">
+<option value="">Выбрать место отправления</option>
+<option value="2">Борисполь</option>
+<option value="9">Гамбург</option>
+<option value="5">Гатвик</option>
+<option value="13">Домодедово</option>
+<option value="10">Дюссельдорф</option>
+<option value="1">Киев</option>
+<option value="3">Лондон</option>
+<option value="7">Лутон</option>
+<option value="12">Москва</option>
+<option value="6">Станстед</option>
+<option value="8">Франкфурт</option>
+<option value="11">Франкфурт-на-Майне</option>
+<option value="4">Хитроу</option>
+<option value="14">Шереметьево</option>
+</select>
+
+            </div>
+          </div>
+        </div>
+        <div class="field-container">
+          <label for="#">ПУНКТ НАЗНАЧЕНИЯ</label>
+          <div class="dropdown">
+            <div class="form-group field-titla required">
+
+              <select id="titla" class="form-control" name="Bid[wher_points]" aria-required="true">
+<option value="">Выбрать место нахождения</option>
+<option value="2">Борисполь</option>
+<option value="9">Гамбург</option>
+<option value="5">Гатвик</option>
+<option value="13">Домодедово</option>
+<option value="10">Дюссельдорф</option>
+<option value="1">Киев</option>
+<option value="3">Лондон</option>
+<option value="7">Лутон</option>
+<option value="12">Москва</option>
+<option value="6">Станстед</option>
+<option value="8">Франкфурт</option>
+<option value="11">Франкфурт-на-Майне</option>
+<option value="4">Хитроу</option>
+<option value="14">Шереметьево</option>
+</select>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="fields">
+        <div class="field-container datetime">
+          <label for="datepicker-1">ДАТА И ВРЕМЯ ОТПРАВЛЕНИЯ</label>
+          
+          <div class="field">
+            <div class="form-group field-bid-from_date required">
+
+              <div class="input-group-md input-group nex-datepicker-container date"><input type="text" id="bid-from_date" class="input-md form-control" name="Bid[from_date]" readonly="" placeholder="Выбрать дату"><span class="input-group-addon" style="border-left: none;"><img src="img/calendar.png" alt="#"></span></div>
+
+            </div>
+          </div>
+        </div>
+        <div class="field-container dropdown-three">
+          <div class="field">
+            <label for="#">ЧАСЫ</label>
+            <div class="input-container">
+              <div class="dropdown">
+                <div class="form-group field-bid-from_hour required">
+
+                  <select id="bid-from_hour" class="form-control" name="Bid[from_hour]" aria-required="true">
+<option value="">00</option>
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+</select>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label for="#">МИНУТЫ</label>
+            <div class="input-container">
+              <div class="dropdown">
+                <div class="form-group field-bid-from_minutes required">
+
+                  <select id="bid-from_minutes" class="form-control" name="Bid[from_minutes]" aria-required="true">
+<option value="0">00</option>
+<option value="5">05</option>
+<option value="10">10</option>
+<option value="15">15</option>
+<option value="20">20</option>
+<option value="25">25</option>
+<option value="30">30</option>
+<option value="35">35</option>
+<option value="40">40</option>
+<option value="45">45</option>
+<option value="50">50</option>
+<option value="55">55</option>
+</select>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label for="#">КОЛ-ВО ЧЕЛОВЕК</label>
+            <div class="input-container">
+              <div class="dropdown">
+                <div class="form-group field-bid-from_quantity required">
+
+                  <select id="bid-from_quantity" class="form-control" name="Bid[from_quantity]" aria-required="true">
+<option value="">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="field-container">
+          <label for="#">КОЛ-ВО БАГАЖНЫХ МЕСТ</label>
+          <div class="fields-fields">
+            <div class="field">
+              <div class="input-container">
+                <label for="chemodan1"><img src="img/chemodan1.png" alt="#"></label>
+                <div class="input">
+                  <div class="form-group field-bid-from_baggage required">
+
+                    <input type="text" id="bid-from_baggage" class="numbers" name="Bid[from_baggage]" aria-required="true">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <div class="input-container">
+                <label for="chemodan2"><img src="img/chemodan2.png" alt="#"></label>
+                <div class="input">
+                  <div class="form-group field-bid-from_things required">
+
+                    <input type="text" id="bid-from_things" class="numbers" name="Bid[from_things]" aria-required="true">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <div class="input-container">
+                <label for="chemodan3"><img src="img/chemodan3.png" alt="#"></label>
+                <div class="input">
+                  <div class="form-group field-bid-from_pram required">
+
+                    <input type="text" id="bid-from_pram" class="numbers" name="Bid[from_pram]" aria-required="true">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="fields">
+        <div class="field-container datetime">
+          <label for="datepicker-2">ДАТА И ВРЕМЯ ОТПРАВЛЕНИЯ</label>
+          <div class="field">
+            <div class="form-group field-bid-wher_date">
+
+              <div class="input-group-md input-group nex-datepicker-container date"><input type="text" id="bid-wher_date" class="input-md form-control" name="Bid[wher_date]" readonly="" placeholder="Выбрать дату"><span class="input-group-addon" style="border-left: none;"><img src="img/calendar.png" alt="#"></span></div>
+
+            </div>
+          </div>
+        </div>
+        <div class="field-container dropdown-three">
+          <div class="field">
+            <label for="#">ЧАСЫ</label>
+            <div class="input-container">
+              <div class="dropdown">
+                <div class="form-group field-bid-wher_hour">
+
+                  <select id="bid-wher_hour" class="form-control" name="Bid[wher_hour]">
+<option value="">00</option>
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+</select>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label for="#">МИНУТЫ</label>
+            <div class="input-container">
+              <div class="dropdown">
+                <div class="form-group field-bid-wher_minutes">
+
+                  <select id="bid-wher_minutes" class="form-control" name="Bid[wher_minutes]">
+<option value="0">00</option>
+<option value="5">05</option>
+<option value="10">10</option>
+<option value="15">15</option>
+<option value="20">20</option>
+<option value="25">25</option>
+<option value="30">30</option>
+<option value="35">35</option>
+<option value="40">40</option>
+<option value="45">45</option>
+<option value="50">50</option>
+<option value="55">55</option>
+</select>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label for="#">КОЛ-ВО ЧЕЛОВЕК</label>
+            <div class="input-container">
+              <div class="dropdown">
+                <div class="form-group field-bid-wher_quantity">
+
+                  <select id="bid-wher_quantity" class="form-control" name="Bid[wher_quantity]">
+<option value="">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="field-container">
+          <label for="#">КОЛ-ВО БАГАЖНЫХ МЕСТ</label>
+          <div class="fields-fields">
+            <div class="field">
+              <div class="input-container">
+                <label for="chemodan4"><img src="img/chemodan1.png" alt="#"></label>
+                <div class="input">
+                  <div class="form-group field-bid-wher_baggage">
+
+                    <input type="text" id="bid-wher_baggage" class="numbers" name="Bid[wher_baggage]">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <div class="input-container">
+                <label for="chemodan5"><img src="img/chemodan2.png" alt="#"></label>
+                <div class="input">
+                  <div class="form-group field-bid-wher_things">
+
+                    <input type="text" id="bid-wher_things" class="numbers" name="Bid[wher_things]">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <div class="input-container">
+                <label for="chemodan6"><img src="img/chemodan3.png" alt="#"></label>
+                <div class="input">
+                  <div class="form-group field-bid-wher_pram">
+
+                    <input type="text" id="bid-wher_pram" class="numbers" name="Bid[wher_pram]">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-md-4">
+      <div class="fields">
+        <div class="field-container black-field">
+          <div class="field">
+            <label for="#">УРОВЕНЬ ТРАНСФЕРА</label>
+            <div class="inputs">
+              <div class="input-container">
+                <div class="form-group field-bid-vip">
+
+                  <input type="hidden" name="Bid[vip]" value="0"><label><input type="checkbox" id="bid-vip" name="Bid[vip]" value="1"> VIP</label>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label for="#">ДЕТСКОЕ КРЕСЛО</label>
+            <div class="inputs">
+              <div class="form-group field-bid-baby_chair">
+
+                <input type="hidden" name="Bid[baby_chair]" value="">
+                <div id="bid-baby_chair" value="1"><label><input type="radio" name="Bid[baby_chair]" value="2"> Да</label>
+                  <label><input type="radio" name="Bid[baby_chair]" value="1" checked=""> Нет</label></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="fields">
+        <div class="field-container black-field2">
+          <div class="field">
+            <label for="#">НАПРАВЛЕНИЕ</label>
+            <div class="inputs">
+              <div class="form-group field-bid-lead">
+
+                <input type="hidden" name="Bid[lead]" value="">
+                <div id="bid-lead" value="1"><label><input type="radio" name="Bid[lead]" value="2"> Туда и обратно</label>
+                  <label><input type="radio" name="Bid[lead]" value="1" checked=""> В одну  сторону</label></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="buttons">
+    <div class="button-container">
+      <button type="submit"><img class="img-responsive" src="img/eyeButton.png" alt="#"></button>
+      <p>Нажатием кнопки отправить заполненную заявку и ждать предложений по ней от перевозчиков</p>
+    </div>
+    <span>ИЛИ</span>
+    <div class="button-container">
+      <button type="submit"><img class="img-responsive" src="img/envelopeButton.png" alt="#"></button>
+      <p> Нажатием кнопки перейти на страницу, где отобразяться водители, соответствующие параметрам запроса</p>
+    </div>
+  </div>
+</form>

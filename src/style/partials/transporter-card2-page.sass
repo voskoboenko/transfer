@@ -1,0 +1,298 @@
+.transporter-card-page
+  .transporter-card2
+    padding-bottom: 30px
+    .section-title
+      margin-bottom: 60px
+    .car-slider
+      max-width: 350px
+      border: 1px solid #4b9792
+      @media(max-width: 991px)
+        margin: 0 auto 35px
+      .tab-content
+        .tab-pane
+          img
+            margin: auto
+      .owl-carousel
+        padding: 15px 20px
+        .item
+          text-align: center
+          img
+            opacity: 0.7
+            width: 55px
+            margin: auto
+            cursor: pointer
+          a
+            img
+              opacity: 0.7
+              width: 55px
+              margin: auto
+            &:hover img, &:focus img
+              opacity: 1
+            button
+              background: none
+              border: none
+              position: absolute
+              z-index: 1
+              top: 3px
+              right: 10px
+              text-align: center
+              display: none
+              img
+                width: auto
+                margin: auto
+            &:hover button
+              display: block
+        .owl-nav
+          margin: auto
+          position: static
+          div
+            padding: 0
+            background: transparent
+            font-size: 30px
+            color: #4b9792
+            position: absolute
+            top: 0
+            bottom: 0
+            display: flex
+            align-items: center
+            margin: auto
+          .owl-prev
+            left: 5px
+          .owl-next
+            right: 5px
+    .transporter-information
+      .transporter-information1
+        float: left
+        @media(max-width: 767px)
+          float: none
+          max-width: 350px
+          margin: auto
+        &-element
+          margin-bottom: 10px
+          .title
+            color: #5ba4ae
+            font-size: 13px
+          input
+            color: #5d5d5d
+            display: block
+            padding: 3px
+            margin-top: 3px
+            width: 100%
+      .transporter-information2
+        float: right
+        width: 350px
+        @media(max-width: 767px)
+          float: none
+          max-width: 350px
+          margin: auto
+          width: auto
+        .quantity
+          .title
+            margin-bottom: 10px
+            color: #5ba4ae
+            font-size: 15px
+          &-elements
+            display: flex
+            justify-content: space-between
+            .element
+              display: flex
+              justify-content: center
+              align-items: center
+              img
+              input
+                position: relative
+                top: 3px
+                color: #777777
+                font-size: 15px
+                width: 50%
+        .checks
+          display: flex
+          flex-wrap: wrap
+          .check
+            width: 50%
+            margin-top: 35px
+            @media(max-width: 767px)
+              width: 100%
+              margin-top: 15px
+            input[type="checkbox"]
+              width: 0px
+              height: 0px
+              position: relative
+              top: -2px
+              margin-right: 20px
+              &:after
+                display: block
+                position: absolute
+                height: 15px
+                width: 15px
+                content: ""
+                top: 0
+                bottom: 0
+                margin: auto
+                left: 0
+                border: 2px solid #b0d34d
+                background: white
+              &:checked
+                &:after
+                  background: white url(../img/greenOkBird.png) center no-repeat
+            span
+              color: #5ba4ae
+              font-size: 15px
+              position: relative
+              top: 3px
+              padding-left: 4px
+      .simple-text
+        clear: both
+        padding-top: 30px
+    .about-transporter
+      .container
+        width: auto
+        background: #f7f7f7
+        .section-title
+          padding-top: 20px
+          padding-bottom: 10px
+          position: relative
+          font-size: 19px
+          text-align: center
+          color: #5ba4ae
+          font-family: 'Exo2-Medium'
+          margin-bottom: 20px
+          &:after
+            display: block
+            position: absolute
+            bottom: 0
+            left: 0
+            right: 0
+            content: ""
+            background: #d4d4d4
+            height: 1px
+            width: 110px
+            margin: auto
+        .transporter-photo
+          margin: auto
+        .photo
+          text-align: center
+          display: block
+          color: grey
+          text-decoration: underline
+          margin-top: 10px
+
+        .simple-text
+          margin-top: 30px
+          background: white
+          padding: 5px 10px
+          border: 1px solid rgba(128, 128, 128, 0.63)
+      .input-containers
+        justify-content: space-between
+        max-width: 250px
+        display: flex
+        text-align: center
+        margin: auto
+        label
+          display: block
+        input
+          max-width: 50px
+          width: 100%
+          display: block
+          margin: auto
+      .input-container
+        text-align: center
+      label
+        color: #4b9792
+      .inputs
+        max-width: 200px
+        margin: auto
+        display: flex
+        justify-content: space-around
+    .ways
+      padding-bottom: 0
+      background: none
+      button
+        background: none
+        border: none
+        display: block
+        margin: 20px auto 0
+      .section-title
+        border: none
+        padding-top: 20px
+        padding-bottom: 0px
+        position: relative
+        font-size: 19px
+        text-align: center
+        color: #5ba4ae
+        font-family: 'Exo2-Medium'
+        margin-bottom: 20px
+        &:after
+          display: block
+          position: absolute
+          bottom: 0
+          left: 0
+          right: 0
+          content: ""
+          background: #d4d4d4 !important
+          height: 1px
+          width: 110px
+          margin: auto
+          border: none
+        &:before
+          display: none
+      .input-container
+        position: relative
+        label
+          display: block
+          color: #4b9792
+        .arrow
+          position: absolute
+          right: 0
+        select
+          padding: 4px 10px
+          border: 1px solid #4b9792
+          width: 100%
+          background: transparent
+        .price
+          border: 1px solid #4b9792
+          padding: 4px
+          text-align: center
+          font-family: 'Exo2-Medium'
+          color: #fe792a
+    .routes
+      padding-top: 70px
+      .section-title
+        margin-bottom: 40px
+        max-width: 200px
+        color: grey
+        border: 1px solid grey
+      .route
+        margin-bottom: 10px
+        justify-content: space-around
+        padding-top: 10px
+        padding-bottom: 10px
+        display: flex
+        border-radius: 3px
+        border: 1px solid #d7d7d7
+        background: #f8f8f8
+        @media(max-width: 767px)
+          flex-direction: column
+          padding-left: 15px
+          padding-right: 15px
+        >*
+          padding-top: 5px
+          padding-bottom: 5px
+          font-family: 'Exo2-Medium'
+        .from
+          color: #707171
+        .to
+          color: #707171
+        .price
+          color: #fe8036
+        .delete
+          color: #d65454
+          img
+      .buttons
+        padding-top: 30px
+        text-align: center
+        padding-bottom: 0px
+        button
+          border: none
+          background: none
+        

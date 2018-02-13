@@ -1,0 +1,65 @@
+.question-answer
+  padding-bottom: 20px
+  padding-top: 40px
+  &-content
+    border: 1px solid #5ba4ae
+  .section-title
+    margin-bottom: 60px
+  .panel-group
+    .panel
+      border: none
+      a, a[aria-expanded="false"]
+        border-bottom: 1px solid #5ba4ae
+        display: block
+        color: black
+        font-size: 16px
+        padding: 20px
+        position: relative
+        &:after
+          display: block
+          position: absolute
+          top: 0
+          bottom: 0
+          right: 20px
+          margin: auto
+          background: url(../img/plus.png) center no-repeat
+          background-size: 100% 100%
+          content: ""
+          width: 37px
+          height: 36px
+        &[aria-expanded="true"]:after
+          background: url(../img/minus.png) center no-repeat
+    .panel-collapse
+      background: #5ba4ae
+      color: white
+      position: relative
+      .panel-body
+        p:first-of-type
+          margin-top: 15px
+        p:last-of-type
+          margin-bottom: 0
+          padding-bottom: 10px
+        .answer
+          position: absolute
+          top: -13px
+          left: -8px
+  form
+    padding: 0 20px 20px
+    textarea
+      border: 1px solid #c3db7e
+      background: #f7f7f7
+      display: block
+      width: 100%
+      height: 175px
+      padding: 15px
+      resize: none
+      margin-bottom: 20px
+    button
+      display: block
+      max-width: 240px
+      width: 100%
+      height: 30px
+      background: white
+      border: 1px solid #c3db7e
+      color: #c3db7e
+      float: right

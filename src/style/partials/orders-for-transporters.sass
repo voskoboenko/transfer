@@ -1,0 +1,259 @@
+.orders-for-transporters-page
+  .buttons-more
+    text-align: center
+    margin-bottom: 30px
+  .hero
+    padding-top: 10px
+    padding-bottom: 10px
+    background: url(../img/heroBG5.png) center no-repeat
+    background-size: cover
+    .container
+      background: rgba(100,100,100,.52)
+      padding-top: 15px
+      padding-bottom: 15px
+    .section-title
+      font-size: 23px
+      padding-top: 8px
+      padding-bottom: 8px
+      border: 1px solid white
+      max-width: 450px
+      margin: auto
+      text-align: center
+      font-family: 'Exo2-Medium'
+      color: white
+      position: relative
+      &:after
+        display: block
+        position: absolute
+        height: 1px
+        width: 15px
+        background: white
+        content: ""
+        left: 20px
+        top: 0
+        bottom: 0
+        margin: auto
+      &:before
+        display: block
+        position: absolute
+        height: 1px
+        width: 15px
+        background: white
+        content: ""
+        right: 20px
+        top: 0
+        bottom: 0
+        margin: auto
+        
+    form
+      background: transparent
+      .fields
+        padding-left: 0
+        padding-right: 0
+    .buttons
+      padding-left: 15px
+      padding-right: 15px
+      text-align: right
+      @media(max-width: 991px)
+        text-align: center
+      button
+        background: transparent
+        border: none
+        display: inline-block
+        margin-left: 20px
+        @media(max-width: 991px)
+          margin-left: 0
+          
+  .orders
+    padding-top: 20px
+    .panel-group
+      .panel
+        margin-bottom: 15px
+        border: none
+        .panel-header
+          border-top: 1px solid grey
+          border-left: 1px solid grey
+          border-right: 1px solid grey
+          border-radius: 5px
+          border-bottom-left-radius: 0
+          border-bottom-right-radius: 0
+          display: flex
+          justify-content: space-between
+          padding: 5px 15px
+          color: rgba(0, 0, 0, 0.6)
+          font-family: 'Exo2-Medium'
+          background: #f8f8f8
+          padding-right: 40px
+          position: relative
+          &:after
+            position: absolute
+            top: 0
+            bottom: 0
+            right: 10px
+            margin: auto
+            height: 21px
+            width: 21px
+            content: ""
+          @media(max-width: 991px)
+            flex-direction: column
+          .number
+            width: 15%
+            @media(max-width: 991px)
+              text-align: left
+              width: 100%
+          .cities
+            width: 25%
+            text-align: center
+            @media(max-width: 991px)
+              text-align: left
+              width: 100%
+          .date
+            width: 25%
+            text-align: center
+            @media(max-width: 991px)
+              text-align: left
+              width: 100%
+          .country
+            width: 25%
+            @media(max-width: 991px)
+              text-align: left
+              width: 100%
+            
+            img
+          &[aria-expanded="false"] 
+            border-bottom-left-radius: 5px
+            border-bottom-right-radius: 5px
+            border-bottom: 1px solid grey
+            &:after
+              background: url(../img/to-basket2.png) center no-repeat
+              background-size: 100% 100%
+            
+          &[aria-expanded="true"] 
+            border-bottom-left-radius: 0px
+            border-bottom-right-radius: 0px
+            border-bottom: none
+            &:after
+              background: url(../img/greenAngleBottom.png) center no-repeat
+              background-size: 100% 100%
+            
+        .panel-collapse
+          .panel-body
+            padding-top: 0
+            .order
+              padding-bottom: 15px
+              padding-left: 15px
+              padding-right: 15px
+              text-align: center
+              border-bottom: 1px solid grey
+              border-left: 1px solid grey
+              border-right: 1px solid grey
+              border-bottom-left-radius: 5px
+              border-bottom-right-radius: 5px
+              margin-left: -15px
+              margin-right: -15px
+              &-title
+                color: #6aa6a2
+                text-align: center
+                margin-bottom: 5px
+                margin-top: 10px
+                font-family: 'Exo2-Medium'
+              .city
+                font-size: 21px
+                color: #898989
+                position: relative
+              .img-responsive
+                right: -20px
+                bottom: 2px
+                position: absolute
+                @media(max-width: 991px)
+                  display: none
+              
+              .grey
+                color: #898989
+                margin-bottom: 21px
+              &-info1
+                display: flex
+                justify-content: space-between
+                max-width: 250px
+                margin: auto
+                .date
+                  color: #898989
+                  img
+                    
+                  &:nth-of-type(1)
+                    img
+                      width: 20px
+                    span
+                      position: relative
+                      top: 3px
+                  &:nth-of-type(3) img
+                    position: relative
+                    top: -7px
+                  span
+              &-info2
+                display: flex
+                justify-content: space-between
+                max-width: 200px
+                margin: auto
+                .date
+                  color: #898989
+                  img
+                    width: 25px
+                    position: relative
+                    top: -5px
+                  &:nth-of-type(1)
+                    img
+                      width: 25px
+                    span
+                      position: relative
+                      top: 0px
+                  span
+              .buttons
+                text-align: right
+                margin-top: 20px
+                @media(max-width: 991px)
+                  text-align: center
+                a
+                  img
+                    display: block
+                    position: static
+                    margin: auto
+                    margin-right: 0
+                    @media(max-width: 991px)
+                      margin: auto
+            .price
+              margin-top: 10px
+              margin-left: -15px
+              margin-right: -15px
+              &-container
+                background: #f7f7f7
+                padding-top: 10px
+                padding-bottom: 15px
+                padding-right: 15px
+                padding-left: 15px
+                border: 1px solid #a9cc44
+                .price-title
+                  color: #6aa6a2
+                  font-family: 'Exo2-Medium'
+                  padding: 5px 10px
+                .price-price
+                  border: 1px solid #a9cc44
+                  max-width: 210px
+                  padding: 5px 10px
+                  background: white
+                  font-family: 'Exo2-Medium'
+                  color: #fe792a
+                  margin-bottom: 10px
+                .price-text
+                  font-size: 13px
+                  background: white
+                  padding: 10px
+                  border: 1px solid #a9cc44
+                  text-align: justify
+              .buttons
+                margin-top: 25px
+                padding-left: 15px
+                padding-right: 15px
+                text-align: right
+                a
+              

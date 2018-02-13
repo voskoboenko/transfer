@@ -1,0 +1,242 @@
+.lkTransporter
+  padding-bottom: 80px
+  padding-top: 50px
+  p.value
+    text-align: center
+  a.showPassword
+    display: block
+    text-align: center
+  .section-title
+  .buttons
+    text-align: right
+    padding-top: 20px
+    padding-bottom: 20px
+    .purseButton
+      color: grey
+      text-decoration: underline
+      padding-right: 20px
+  .lkButtons
+    margin-bottom: -1px
+    display: flex
+    justify-content: space-between
+    position: relative
+    @media(max-width: 767px)
+      flex-direction: column
+      margin-top: 50px
+    .lkButtons-element-special
+      @media(max-width: 991px)
+        position: absolute
+        top: -60px
+    &-element
+      display: flex
+      a
+        padding-left: 30px
+        padding-right: 30px
+        border: 1px solid transparent
+        @media(max-width: 1199px)
+          padding-left: 15px
+          padding-right: 15px
+      &:hover a, &.active a
+        text-decoration: none
+      &.active a
+        border: 1px solid #4b9792
+        border-bottom: 1px solid white
+        @media(max-width: 767px)
+          border-color: transparent
+      span
+        display: flex
+        align-items: center
+        padding-left: 40px
+        color: #a3a3a3
+        font-size: 16px
+        padding-top: 15px
+        padding-bottom: 15px
+        @media(max-width: 767px)
+          padding-top: 15px
+          padding-bottom: 15px
+      &:nth-of-type(1)
+        span
+          background: url(../img/lkMenuItem1.png) center left no-repeat
+        &:hover, &.active
+          span
+            background: url(../img/lkMenuItem1Active.png) center left no-repeat
+            color: #4b9792
+      &:nth-of-type(2)
+        span
+          background: url(../img/lkMenuItem2.png) center left no-repeat
+        &:hover, &.active
+          span
+            background: url(../img/lkMenuItem2Active.png) center left no-repeat
+            color: #4b9792
+      &:nth-of-type(3)
+        span
+          background: url(../img/lkMenuItem3.png) center left no-repeat
+        &:hover, &.active
+          span
+            background: url(../img/lkMenuItem3Active.png) center left no-repeat
+            color: #4b9792
+      &:nth-of-type(4)
+        span
+          background: url(../img/lkMenuItem4.png) center left no-repeat
+        &:hover, &.active
+          span
+            background: url(../img/lkMenuItem4Active.png) center left no-repeat
+            color: #4b9792
+  &-content
+    padding: 15px
+    border: 1px solid #4b9792
+    .lkMessages
+      .message
+        padding-bottom: 30px
+        text-align: right
+        .simple-text
+          border: 1px solid #a3c837
+          background: #f7f7f7
+          padding: 10px 15px
+        a
+    .panel-group
+      .panel
+        padding-top: 15px
+        padding-bottom: 0px
+        border: none
+        &-header
+          padding-bottom: 15px
+          a
+            &[aria-expanded="false"] .panel-header-title:after
+              background: url(../img/to-basket.png) center no-repeat
+              background-size: 100% 100%
+            &[aria-expanded="true"] .panel-header-title:after
+              background: url(../img/greenAngleBottom.png) center no-repeat
+              background-size: 100% 100%
+              
+            &:hover, &:focus
+              text-decoration: none
+            .panel-header-title
+              display: flex
+              justify-content: space-between
+              font-size: 16px
+              position: relative
+              padding-right: 50px
+              margin-bottom: 5px
+              @media(max-width: 991px)
+                flex-direction: column
+              &:after
+                display: block
+                position: absolute
+                top: 0
+                bottom: 0
+                right: 0
+                width: 21px
+                height: 21px
+                content: ""
+                margin: auto
+                @media(max-width: 991px)
+                  margin: 0
+              .name-date
+                color: rgba(128, 128, 128, 0.6)
+                .name
+                  color: rgba(128, 128, 128, 0.6)
+                .date
+                  color: #4b9792
+              .quantity-delete
+                .quantity
+                  margin-right: 10px
+                  color: rgba(128, 128, 128, 0.6)
+                  span
+                    display: inline-block
+                    width: 25px
+                    height: 25px
+                    border-radius: 100px
+                    background: #a3c837
+                    color: white
+                    text-align: center
+                    line-height: 25px
+                    margin-left: 5px
+                .delete
+                  color: rgba(128, 128, 128, 0.6)
+                  background: none
+                  border: none
+                  @media(max-width: 767px)
+                    padding-left: 0
+                  img
+                    position: relative
+                    top: -2px
+                    padding-right: 5px
+            .panel-header-content
+              .user-photo
+                width: 98px
+                float: left
+                @media(max-width: 767px)
+                  float: none
+                  margin: auto
+              .text
+                margin-left: 120px
+                max-height: 40px
+                margin-top: 25px
+                color: rgba(0, 0, 0, 0.61)
+                overflow: hidden
+                @media(max-width: 767px)
+                  margin-left: auto
+                  margin-top: 15px
+        &-collapse
+          .panel-body
+            padding-bottom: 0
+            @media(max-width: 767px)
+              padding-left: 0
+              padding-right: 0
+            .man
+              margin-bottom: 30px
+              padding: 20px
+              max-width: 870px
+              .user-photo
+                width: 98px
+                float: left
+                position: relative
+                top: 5px
+                @media(max-width: 767px)
+                  float: none
+                  margin: auto
+              .user-text
+                margin-left: 120px
+                text-align: justify
+                @media(max-width: 767px)
+                  margin-left: auto
+                  margin-top: 20px
+                .name-date
+                  font-size: 16px
+                  margin-bottom: 10px
+                  .name
+                    font-family: 'Exo2-Medium'
+                  .date
+                    color: rgba(0, 0, 0, 0.63)
+                p
+                .buttons
+                  padding-bottom: 0
+                  padding-top: 5px
+                  a
+                    color: white
+                    margin-left: 15px
+              &.man1
+                margin-left: 60px
+                background: #ececec
+                @media(max-width: 767px)
+                  margin-left: 0
+              &.man2
+                margin-left: 120px
+                background: #5ba4ae
+                color: white
+                position: relative
+                @media(max-width: 767px)
+                  margin-left: 0
+                &:after
+                  display: block
+                  position: absolute
+                  top: -12px
+                  left: 25%
+                  width: 25px
+                  height: 25px
+                  content: ""
+                  background: #5ba4ae
+                  transform: rotate(45deg)
+                .date
+                  color: white !important

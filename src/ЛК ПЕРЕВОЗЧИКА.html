@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project</title>
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+	//= tamplate/nav.html
+  <section class="lkTransporter">
+    <div class="container">
+      <h2 class="section-title blue">ЛИЧНЫЙ КАБИНЕТ</h2>
+      <div class="buttons">
+        <a href="#" class="purseButton">Кошелек</a>
+        <a href="#"><img src="img/feedbackAboutMe.png" alt="#"></a>
+      </div>
+      <ul class="lkButtons">
+        <li class="lkButtons-element"><a data-toggle="pill" href="#tab1"><span>Активные заявки</span></a></li>
+        <li class="lkButtons-element"><a data-toggle="pill" href="#tab2"><span>Архивные заявки</span></a></li>
+        <li class="lkButtons-element"><a data-toggle="pill" href="#tab3"><span>Профиль</span></a></li>
+        <li class="lkButtons-element active"><a data-toggle="pill" href="#tab4"><span>Сообщения</span></a></li>
+        <li class="lkButtons-element-special"><a href="#"><img src="img/newApplictionButton.png" alt="#"></a></li>
+      </ul>
+      <div class="lkTransporter-content tab-content">
+        <div id="tab1" class="tab-pane fade">
+          <div class="lkTransporterActiveApplications orders-for-transporters-page">
+            <form class="checkboxes" action="#">
+              <div class="input-container">
+                <input id="checkbox1" type="checkbox">
+                <label for="checkbox1">Пассажир 
+    выбирает перевозчика </label>
+              </div>
+              <div class="input-container">
+                <input id="checkbox2" type="checkbox">
+                <label for="checkbox2">Вас выбрали 
+    перевозчиком </label>
+              </div>
+              <div class="input-container">
+                <input id="checkbox3" type="checkbox">
+                <label for="checkbox3">Получен запрос - 
+    ожидате вашего ответа</label>
+              </div>
+
+              <div class="input-container">
+                <input id="checkbox4" type="checkbox">
+                <label for="checkbox4">Подтвержден и 
+    ожидает исполнения </label>
+              </div>
+            </form>
+            <div class="orders">
+              <div class="panel-group" id="accordion">
+                <div class="panel panel-default status1">
+                  <a class="panel-header" aria-expanded="true" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                    <div class="number">№ 71521358</div>
+                    <div class="cities">Киев-Москва</div>
+                    <div class="date">08-01-2017</div>
+                    <div class="country"><img src="img/flag.png" alt="#"> Великобритания</div>
+                    <div class="status">ПОЛУЧЕН ЗАПРОС - ОЖИДАЙТЕ ВАШЕГО ОТВЕТА</div>
+                  </a>
+                  <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <div class="order">
+                        <div class="row">
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Место отправления</div>
+                            <div class="city">Киев</div>
+                            <img src="img/greenAngles.png" class="img-responsive" alt="#">
+                          </div>
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Пункт назначения</div>
+                            <div class="city">Лондон</div>
+                          </div>
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Детское кресло</div>
+                            <div class="grey">Да</div>
+                            <div class="order-title">Уровень трансфера</div>
+                            <div class="grey">Vip</div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                            <div class="order-title">Дата и время, кол-во человек</div>
+                            <div class="order-info1">
+                              <div class="date">
+                                <img src="img/calendar.png" alt="#">
+                                <span>08-01-2017</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/clock.png" alt="#">
+                                <span>18:30</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/manIcon.png" alt="#">
+                                <span>9</span>
+                              </div>
+                            </div>
+                            <div class="order-title">Кол-во багажных мест</div>
+                            <div class="order-info1 order-info2">
+                              <div class="date">
+                                <img src="img/chemodan1.png" alt="#">
+                                <span>15</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan2.png" alt="#">
+                                <span>11</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan3.png" alt="#">
+                                <span>10</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                            <div class="order-title">Дата и время, кол-во человек</div>
+                            <div class="order-info1">
+                              <div class="date">
+                                <img src="img/calendar.png" alt="#">
+                                <span>08-01-2017</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/clock.png" alt="#">
+                                <span>18:30</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/manIcon.png" alt="#">
+                                <span>9</span>
+                              </div>
+                            </div>
+                            <div class="order-title">Кол-во багажных мест</div>
+                            <div class="order-info1 order-info2">
+                              <div class="date">
+                                <img src="img/chemodan1.png" alt="#">
+                                <span>15</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan2.png" alt="#">
+                                <span>11</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan3.png" alt="#">
+                                <span>10</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default status2">
+                  <a class="panel-header" aria-expanded="false" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                    <div class="number">№ 71521358</div>
+                    <div class="cities">Киев-Москва</div>
+                    <div class="date">08-01-2017</div>
+                    <div class="country"><img src="img/flag.png" alt="#"> Великобритания</div>
+                    <div class="status">ВАС ВЫБРАЛИ ПЕРЕВОЗЧИКОМ - ПОДТВЕРДИТЕ ЗАКАЗ</div>
+                  </a>
+                  <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="order">
+                        <div class="row">
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Место отправления</div>
+                            <div class="city">Киев</div>
+                            <img src="img/greenAngles.png" class="img-responsive" alt="#">
+                          </div>
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Пункт назначения</div>
+                            <div class="city">Лондон</div>
+                          </div>
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Детское кресло</div>
+                            <div class="grey">Да</div>
+                            <div class="order-title">Уровень трансфера</div>
+                            <div class="grey">Vip</div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                            <div class="order-title">Дата и время, кол-во человек</div>
+                            <div class="order-info1">
+                              <div class="date">
+                                <img src="img/calendar.png" alt="#">
+                                <span>08-01-2017</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/clock.png" alt="#">
+                                <span>18:30</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/manIcon.png" alt="#">
+                                <span>9</span>
+                              </div>
+                            </div>
+                            <div class="order-title">Кол-во багажных мест</div>
+                            <div class="order-info1 order-info2">
+                              <div class="date">
+                                <img src="img/chemodan1.png" alt="#">
+                                <span>15</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan2.png" alt="#">
+                                <span>11</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan3.png" alt="#">
+                                <span>10</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                            <div class="order-title">Дата и время, кол-во человек</div>
+                            <div class="order-info1">
+                              <div class="date">
+                                <img src="img/calendar.png" alt="#">
+                                <span>08-01-2017</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/clock.png" alt="#">
+                                <span>18:30</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/manIcon.png" alt="#">
+                                <span>9</span>
+                              </div>
+                            </div>
+                            <div class="order-title">Кол-во багажных мест</div>
+                            <div class="order-info1 order-info2">
+                              <div class="date">
+                                <img src="img/chemodan1.png" alt="#">
+                                <span>15</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan2.png" alt="#">
+                                <span>11</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan3.png" alt="#">
+                                <span>10</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default status3">
+                  <a class="panel-header" aria-expanded="false" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                    <div class="number">№ 71521358</div>
+                    <div class="cities">Киев-Москва</div>
+                    <div class="date">08-01-2017</div>
+                    <div class="country"><img src="img/flag.png" alt="#"> Великобритания</div>
+                    <div class="status">ПАССАЖИР ВЫБИРАЕТ ПЕРЕВОЗЧИКА</div>
+                  </a>
+                  <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="order">
+                        <div class="row">
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Место отправления</div>
+                            <div class="city">Киев</div>
+                            <img src="img/greenAngles.png" class="img-responsive" alt="#">
+                          </div>
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Пункт назначения</div>
+                            <div class="city">Лондон</div>
+                          </div>
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Детское кресло</div>
+                            <div class="grey">Да</div>
+                            <div class="order-title">Уровень трансфера</div>
+                            <div class="grey">Vip</div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                            <div class="order-title">Дата и время, кол-во человек</div>
+                            <div class="order-info1">
+                              <div class="date">
+                                <img src="img/calendar.png" alt="#">
+                                <span>08-01-2017</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/clock.png" alt="#">
+                                <span>18:30</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/manIcon.png" alt="#">
+                                <span>9</span>
+                              </div>
+                            </div>
+                            <div class="order-title">Кол-во багажных мест</div>
+                            <div class="order-info1 order-info2">
+                              <div class="date">
+                                <img src="img/chemodan1.png" alt="#">
+                                <span>15</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan2.png" alt="#">
+                                <span>11</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan3.png" alt="#">
+                                <span>10</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                            <div class="order-title">Дата и время, кол-во человек</div>
+                            <div class="order-info1">
+                              <div class="date">
+                                <img src="img/calendar.png" alt="#">
+                                <span>08-01-2017</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/clock.png" alt="#">
+                                <span>18:30</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/manIcon.png" alt="#">
+                                <span>9</span>
+                              </div>
+                            </div>
+                            <div class="order-title">Кол-во багажных мест</div>
+                            <div class="order-info1 order-info2">
+                              <div class="date">
+                                <img src="img/chemodan1.png" alt="#">
+                                <span>15</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan2.png" alt="#">
+                                <span>11</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan3.png" alt="#">
+                                <span>10</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default status4">
+                  <a class="panel-header" aria-expanded="false" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                    <div class="number">№ 71521358</div>
+                    <div class="cities">Киев-Москва</div>
+                    <div class="date">08-01-2017</div>
+                    <div class="country"><img src="img/flag.png" alt="#"> Великобритания</div>
+                    <div class="status">ПОДТВЕРЖДЁН И ОЖИДАЕТ ИСПОЛНЕНИЯ</div>
+                  </a>
+                  <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="order">
+                        <div class="row">
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Место отправления</div>
+                            <div class="city">Киев</div>
+                            <img src="img/greenAngles.png" class="img-responsive" alt="#">
+                          </div>
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Пункт назначения</div>
+                            <div class="city">Лондон</div>
+                          </div>
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Детское кресло</div>
+                            <div class="grey">Да</div>
+                            <div class="order-title">Уровень трансфера</div>
+                            <div class="grey">Vip</div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                            <div class="order-title">Дата и время, кол-во человек</div>
+                            <div class="order-info1">
+                              <div class="date">
+                                <img src="img/calendar.png" alt="#">
+                                <span>08-01-2017</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/clock.png" alt="#">
+                                <span>18:30</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/manIcon.png" alt="#">
+                                <span>9</span>
+                              </div>
+                            </div>
+                            <div class="order-title">Кол-во багажных мест</div>
+                            <div class="order-info1 order-info2">
+                              <div class="date">
+                                <img src="img/chemodan1.png" alt="#">
+                                <span>15</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan2.png" alt="#">
+                                <span>11</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan3.png" alt="#">
+                                <span>10</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                            <div class="order-title">Дата и время, кол-во человек</div>
+                            <div class="order-info1">
+                              <div class="date">
+                                <img src="img/calendar.png" alt="#">
+                                <span>08-01-2017</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/clock.png" alt="#">
+                                <span>18:30</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/manIcon.png" alt="#">
+                                <span>9</span>
+                              </div>
+                            </div>
+                            <div class="order-title">Кол-во багажных мест</div>
+                            <div class="order-info1 order-info2">
+                              <div class="date">
+                                <img src="img/chemodan1.png" alt="#">
+                                <span>15</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan2.png" alt="#">
+                                <span>11</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan3.png" alt="#">
+                                <span>10</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab2" class="tab-pane fade">
+          <div class="lkTransporterActiveApplications lkPassengerActiveApplications orders-for-transporters-page lkPassengerArchiveApplications">
+            <div class="orders">
+              <div class="panel-group" id="accordion2">
+                <div class="panel panel-default">
+                  <a class="panel-header" aria-expanded="true" data-toggle="collapse" data-parent="#accordion2" href="#collapseA1">
+                    <div class="number">№ 71521358</div>
+                    <div class="cities">Киев-Москва</div>
+                    <div class="date">08-01-2017</div>
+                    <div class="country"><img src="img/flag.png" alt="#"> Великобритания</div>
+                    <div class="status">ЗАВЕРШЕН</div>
+                  </a>
+                  <div id="collapseA1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <div class="order">
+                        <div class="row">
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Место отправления</div>
+                            <div class="city">Киев</div>
+                            <img src="img/greenAngles.png" class="img-responsive" alt="#">
+                          </div>
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Пункт назначения</div>
+                            <div class="city">Лондон</div>
+                          </div>
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Детское кресло</div>
+                            <div class="grey">Да</div>
+                            <div class="order-title">Уровень трансфера</div>
+                            <div class="grey">Vip</div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                            <div class="order-title">Дата и время, кол-во человек</div>
+                            <div class="order-info1">
+                              <div class="date">
+                                <img src="img/calendar.png" alt="#">
+                                <span>08-01-2017</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/clock.png" alt="#">
+                                <span>18:30</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/manIcon.png" alt="#">
+                                <span>9</span>
+                              </div>
+                            </div>
+                            <div class="order-title">Кол-во багажных мест</div>
+                            <div class="order-info1 order-info2">
+                              <div class="date">
+                                <img src="img/chemodan1.png" alt="#">
+                                <span>15</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan2.png" alt="#">
+                                <span>11</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan3.png" alt="#">
+                                <span>10</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                            <div class="order-title">Дата и время, кол-во человек</div>
+                            <div class="order-info1">
+                              <div class="date">
+                                <img src="img/calendar.png" alt="#">
+                                <span>08-01-2017</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/clock.png" alt="#">
+                                <span>18:30</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/manIcon.png" alt="#">
+                                <span>9</span>
+                              </div>
+                            </div>
+                            <div class="order-title">Кол-во багажных мест</div>
+                            <div class="order-info1 order-info2">
+                              <div class="date">
+                                <img src="img/chemodan1.png" alt="#">
+                                <span>15</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan2.png" alt="#">
+                                <span>11</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan3.png" alt="#">
+                                <span>10</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="orderInformation">
+                          <div class="element"><span>Имя</span> - Николай Перепилица</div>
+                          <div class="element"><span>Машина</span> - renault traffic</div>
+                          <div class="element"><span>Профиль</span> - http://folding.com.ua </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <a class="panel-header red" aria-expanded="false" data-toggle="collapse" data-parent="#accordion2" href="#collapseA2">
+                    <div class="number">№ 71521358</div>
+                    <div class="cities">Киев-Москва</div>
+                    <div class="date">08-01-2017</div>
+                    <div class="country"><img src="img/flag.png" alt="#"> Великобритания</div>
+                    <div class="status"><span>(нашли на другом ресурсе)</span> ОТМЕНЕН</div>
+                  </a>
+                  <div id="collapseA2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="order">
+                        <div class="row">
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Место отправления</div>
+                            <div class="city">Киев</div>
+                            <img src="img/greenAngles.png" class="img-responsive" alt="#">
+                          </div>
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Пункт назначения</div>
+                            <div class="city">Лондон</div>
+                          </div>
+                          <div class="col-lg-2 col-md-4">
+                            <div class="order-title">Детское кресло</div>
+                            <div class="grey">Да</div>
+                            <div class="order-title">Уровень трансфера</div>
+                            <div class="grey">Vip</div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                            <div class="order-title">Дата и время, кол-во человек</div>
+                            <div class="order-info1">
+                              <div class="date">
+                                <img src="img/calendar.png" alt="#">
+                                <span>08-01-2017</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/clock.png" alt="#">
+                                <span>18:30</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/manIcon.png" alt="#">
+                                <span>9</span>
+                              </div>
+                            </div>
+                            <div class="order-title">Кол-во багажных мест</div>
+                            <div class="order-info1 order-info2">
+                              <div class="date">
+                                <img src="img/chemodan1.png" alt="#">
+                                <span>15</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan2.png" alt="#">
+                                <span>11</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan3.png" alt="#">
+                                <span>10</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                            <div class="order-title">Дата и время, кол-во человек</div>
+                            <div class="order-info1">
+                              <div class="date">
+                                <img src="img/calendar.png" alt="#">
+                                <span>08-01-2017</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/clock.png" alt="#">
+                                <span>18:30</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/manIcon.png" alt="#">
+                                <span>9</span>
+                              </div>
+                            </div>
+                            <div class="order-title">Кол-во багажных мест</div>
+                            <div class="order-info1 order-info2">
+                              <div class="date">
+                                <img src="img/chemodan1.png" alt="#">
+                                <span>15</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan2.png" alt="#">
+                                <span>11</span>
+                              </div>
+                              <div class="date">
+                                <img src="img/chemodan3.png" alt="#">
+                                <span>10</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="orderInformation">
+                          <div class="element"><span>Имя</span> - Николай Перепилица</div>
+                          <div class="element"><span>Машина</span> - renault traffic</div>
+                          <div class="element"><span>Профиль</span> - http://folding.com.ua </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab3" class="tab-pane fade">
+          <div class="profile">
+            <ul>
+              <li><a data-toggle="tab" href="#home"><span>Регистрационные данные</span></a></li>
+              <li class="active"><a data-toggle="tab" href="#menu1"><span>Подтверждение профиля</span></a></li>
+              <li><a data-toggle="tab" href="#menu2"><span>Карточка перевозчика</span></a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div id="home" class="tab-pane fade">
+                <div class="lkPassengerRedactProfile">
+                  <form action="#">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img class="img-responsive passenger" src="img/transporter.png" alt="#">
+                        <div class="input-container">
+                          <label for="photo" class="photo">Поменять фото</label>
+                          <input id="photo" type="file" class="hidden">
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="inputs">
+                          <div class="input-container">
+                            <label for="name" class="standart">Имя</label>
+                            <input id="name" type="text" placeholder="Николай">
+                          </div>
+                          <div class="input-container">
+                            <label for="surname" class="standart">Фамилия</label>
+                            <input id="surname" type="text" placeholder="Перепелица">
+                          </div>
+                          <div class="input-container">
+                            <label for="email" class="standart">E-mail</label>
+                            <input id="email" type="text" placeholder="andrey@gmail.com">
+                          </div>
+                          <div class="input-container">
+                            <label for="phone" class="standart">Телефон</label>
+                            <input id="phone" type="text" placeholder="+38 (063) 519 71 03">
+                          </div>
+                          <div class="input-container">
+                            <label for="oldPass" class="standart">Старый пароль</label>
+                            <input id="oldPass" type="password" placeholder="12345678">
+                          </div>
+                          <div class="input-container">
+                            <label for="newPass" class="standart">Новый пароль</label>
+                            <input id="newPass" type="text" placeholder="12345678">
+                          </div>
+                          <div class="input-container">
+                            <label for="repeatPass" class="standart">Повторите пароль</label>
+                            <input id="repeatPass" type="text" placeholder="12345678">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="buttons">
+                      <button type="submit"><img class="img-responsive" src="img/saveChangesButton.png" alt="#"></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div id="menu1" class="tab-pane fade in active">
+                <div class="succes-profile">
+                  <p class="simple-text">Модифицируемый битум в основе всей черепицы. Это означает надежность, долговечность, герметичность, модифицируемый битум в основе всей черепицы. это означает надежность, долговечность, герметичность, высокое сопротивление знакопеременным нагрузкам, возможность эксплуатации при любых.</p>
+                  <form action="#">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="input-container">
+                          <label for="email" class="standart">E-mail</label>
+                          <input id="email" type="text" placeholder="andfrey@gmail.com">
+                        </div>
+                        <button type="submit"><img src="img/success.png" class="img-responsive" alt="#"></button>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="input-container">
+                          <label for="phone" class="standart">Телефон</label>
+                          <input id="phone" type="text" placeholder="+38 (063) 519 71 03">
+                        </div>
+                        <div class="input-container">
+                          <label for="code" class="standart">Введите код</label>
+                          <input id="code" type="text" placeholder="12345678">
+                        </div>
+                        <button type="submit"><img src="img/success.png" class="img-responsive" alt="#"></button>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="succes-profile-features">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="element">
+                          <img src="img/successImg1.png" alt="#">
+                          <p>Загрузите текстовый файл<br>формата Word, txt</p>
+                          <input type="file" id="input1" class="hidden">
+                          <label for="input1"><img src="img/PTCButton.png" class="img-responsive" alt="#"></label>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="element">
+                          <img src="img/successImg2.png" alt="#">
+                          <p>Загрузите текстовый файл<br>формата Word, txt</p>
+                          <input type="file" id="input2" class="hidden">
+                          <label for="input2"><img src="img/pravaButton.png" class="img-responsive" alt="#"></label>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="element">
+                          <img src="img/successImg3.png" alt="#">
+                          <p>Загрузите текстовый файл<br>формата Word, txt</p>
+                          <input type="file" id="input3" class="hidden">
+                          <label for="input3"><img src="img/depositButton.png" class="img-responsive" alt="#"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="menu2" class="tab-pane fade">
+                <div class="transporter-card-page">
+                  <div class="transporter-card2">
+                    <div class="lkTransporter">
+                      <div>
+                        <div>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="car-slider">
+                                <div class="tab-content">
+                                  <div id="car1" class="tab-pane fade in active">
+                                    <img src="img/carBig.png" class="img-responsive" alt="#">
+                                  </div>
+                                  <div id="car2" class="tab-pane fade">
+                                    <img src="img/carBig.png" class="img-responsive" alt="#">
+                                  </div>
+                                  <div id="car3" class="tab-pane fade">
+                                    <img src="img/carBig.png" class="img-responsive" alt="#">
+                                  </div>
+                                  <div id="car4" class="tab-pane fade">
+                                    <img src="img/carBig.png" class="img-responsive" alt="#">
+                                  </div>
+                                  <div id="car5" class="tab-pane fade">
+                                    <img src="img/carBig.png" class="img-responsive" alt="#">
+                                  </div>
+                                </div>
+                                <div class="owl-carousel owl-theme" id="carSlider">
+                                  <div class="item"><a data-toggle="tab" href="#car1"><img class="img-responsive" src="img/car.png" alt="#"><button><img src="img/cross2.png" alt="#"></button></a></div>
+                                  <div class="item"><a data-toggle="tab" href="#car2"><img class="img-responsive" src="img/car.png" alt="#"><button><img src="img/cross2.png" alt="#"></button></a></div>
+                                  <div class="item"><a data-toggle="tab" href="#car3"><img class="img-responsive" src="img/car.png" alt="#"><button><img src="img/cross2.png" alt="#"></button></a></div>
+                                  <div class="item"><a data-toggle="tab" href="#car4"><img class="img-responsive" src="img/car.png" alt="#"><button><img src="img/cross2.png" alt="#"></button></a></div>
+                                  <div class="item"><input class="hidden" id="newCar" type="file"><label for="newCar"><img class="img-responsive" src="img/plusImg.png" alt="#"></label></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-8">
+                              <div class="transporter-information">
+                                <div class="transporter-information1">
+                                  <div class="transporter-information1-element">
+                                    <div class="title">Модель машины</div>
+                                    <input type="text" placeholder="Модель машини">
+                                  </div>
+                                  <div class="transporter-information1-element">
+                                    <div class="title">Марка машины</div>
+                                    <input type="text" placeholder="Renault">
+                                  </div>
+                                  <div class="transporter-information1-element">
+                                    <div class="title">Цвет</div>
+                                    <input type="text" placeholder="Белый">
+                                  </div>
+                                  <div class="transporter-information1-element">
+                                    <div class="title">Год выпуска</div>
+                                    <input type="text" placeholder="2003">
+                                  </div>
+                                </div>
+                                <div class="transporter-information2">
+                                  <div class="quantity">
+                                    <div class="title">Кол-во багажных мест, и кол-во человек</div>
+                                    <div class="quantity-elements">
+                                      <div class="element">
+                                        <img src="img/chemodan1.png" alt="#">
+                                        <input type="text" class="numbers">
+                                      </div>
+                                      <div class="element">
+                                        <img src="img/chemodan2.png" alt="#">
+                                        <input type="text" class="numbers">
+                                      </div>
+                                      <div class="element">
+                                        <img src="img/chemodan3.png" alt="#">
+                                        <input type="text" class="numbers">
+                                      </div>
+                                      <div class="element">
+                                        <img src="img/manIcon.png" alt="#">
+                                        <input type="text" class="numbers">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="checks">
+                                    <div class="check">
+                                      <input type="checkbox">
+                                      <span> Детское кресло</span>
+                                    </div>
+                                    <div class="check">
+                                      <input type="checkbox">
+                                      <span> Cалон для курящих</span>
+                                    </div>
+                                    <div class="check">
+                                      <input type="checkbox">
+                                      <span> Vip</span>
+                                    </div>
+                                    <div class="check">
+                                      <input type="checkbox">
+                                      <span> С животными</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <p class="simple-text">Модифицируемый битум в основе всей черепицы. Это означает надежность, долговечность, герметичность, модифицируемый битум в основе всей черепицы. это означает надежность, долговечность, герметичность, высокое сопротивление знакопеременным нагрузкам, возможность эксплуатации при любых климатических условиях.высокое сопротивление знакопеременным нагрузкам, возможность эксплуатации при любых климатических условиях.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="about-transporter">
+                            <div class="container">
+                              <h2 class="section-title">Мои данные</h2>
+                              <div class="row">
+                                <div class="col-lg-2 col-md-12">
+                                  <img src="img/transporter.png" class="img-responsive transporter-photo" alt="#">
+                                  <input class="hidden" id="photo" type="file">
+                                  <label class="photo" for="photo">Поменять фото</label>
+                                </div>
+                                <div class="col-lg-4 col-md-3">
+                                  <div class="input-containers">
+                                    <div class="input-container">
+                                      <label for="stazh">Стаж вождения</label>
+                                      <input id="stazh" type="text" class="numbers">
+                                    </div>
+                                    <div class="input-container">
+                                      <label for="stazh">Возраст</label>
+                                      <input id="stazh" type="text" class="numbers">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-3 col-md-5">
+                                  <div class="input-container">
+                                    <label for="sex">Пол</label>
+                                    <div class="inputs">
+                                      <div class="input">
+                                        <input name="sex" type="radio" id="man">
+                                        <label for="man">Мужской</label>
+                                      </div>
+                                      <div class="input">
+                                        <input name="sex" checked type="radio" id="woman">
+                                        <label for="woman">Женский</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                  <div class="input-container">
+                                    <label for="smoke">Курю</label>
+                                    <div class="inputs">
+                                      <div class="input">
+                                        <input name="smoke" type="radio" id="yes">
+                                        <label for="yes">Да</label>
+                                      </div>
+                                      <div class="input">
+                                        <input name="smoke" checked type="radio" id="no">
+                                        <label for="no">Нет</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="clearfix hidden-lg"></div>
+                                <div class="col-lg-10">
+                                  <p class="simple-text">Модифицируемый битум в основе всей черепицы. Это означает надежность, долговечность, герметичность, модифицируемый битум в основе всей черепицы. это означает надежность, долговечность, герметичность, высокое сопротивление знакопеременным нагрузкам, возможность эксплуатации при любых климатических условиях.высокое сопротивление знакопеременным нагрузкам, возможность эксплуатации при любых климатических условиях.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ways">
+                            <div>
+                              <h2 class="section-title">Маршруты</h2>
+                              <form action="#">
+                                <div class="row">
+                                  <div class="col-md-3">
+                                    <div class="input-container">
+                                      <label for="country">СТРАНА</label>
+                                      <select name="country" id="country">
+                                        <option value="counrty">Украина</option>
+                                        <option value="counrty">Украина</option>
+                                        <option value="counrty">Украина</option>
+                                        <option value="counrty">Украина</option>
+                                        <option value="counrty">Украина</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <div class="input-container">
+                                      <label for="from">МЕСТО ОТПРАВКИ</label>
+                                      <select name="from" id="from">
+                                        <option value="counrty">Украина</option>
+                                        <option value="counrty">Украина</option>
+                                        <option value="counrty">Украина</option>
+                                        <option value="counrty">Украина</option>
+                                        <option value="counrty">Украина</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <div class="input-container">
+                                      <label for="to">МЕСТО ПРИБЫТИЯ</label>
+                                      <select name="to" id="to">
+                                        <option value="counrty">Украина</option>
+                                        <option value="counrty">Украина</option>
+                                        <option value="counrty">Украина</option>
+                                        <option value="counrty">Украина</option>
+                                        <option value="counrty">Украина</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <div class="input-container">
+                                      <label for="country">СТОИМОСТЬ</label>
+                                      <div class="price">300 $</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button type="submit"><img class="img-responsive" src="img/plusWay.png" alt="#"></button>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="routes">
+                            <div>
+                              <div class="route">
+                                <div class="from">МЕСТО ОТПРАВКИ</div>
+                                <div class="to">МЕСТО ПРИБЫТИЯ</div>
+                                <div class="price">300 $</div>
+                                <a href="#" class="delete">УДАЛИТЬ <i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
+                              </div>
+                              <div class="route">
+                                <div class="from">МЕСТО ОТПРАВКИ</div>
+                                <div class="to">МЕСТО ПРИБЫТИЯ</div>
+                                <div class="price">300 $</div>
+                                <a href="#" class="delete">УДАЛИТЬ <i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
+                              </div>
+                              <div class="route">
+                                <div class="from">МЕСТО ОТПРАВКИ</div>
+                                <div class="to">МЕСТО ПРИБЫТИЯ</div>
+                                <div class="price">300 $</div>
+                                <a href="#" class="delete">УДАЛИТЬ <i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
+                              </div>
+                              <div class="route">
+                                <div class="from">МЕСТО ОТПРАВКИ</div>
+                                <div class="to">МЕСТО ПРИБЫТИЯ</div>
+                                <div class="price">300 $</div>
+                                <a href="#" class="delete">УДАЛИТЬ <i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
+                              </div>
+                              <div class="buttons">
+                                <button type="submit"><img class="img-responsive" src="img/save.png" alt="#"></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab4" class="tab-pane fade in active">
+          <div class="lkMessages">
+            <div class="message">
+              <p class="simple-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacusaccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacusaccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odioLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacusaccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odioLorem ipsum dolor sit </p>
+              <a href="#"><img src="img/send.png" alt="#"></a>
+            </div>
+            <div class="panel-group" id="accordion3">
+              <div class="panel panel-default">
+                <div class="panel-header">
+                  <a data-toggle="collapse" aria-expanded="false" data-parent="#accordion3" href="#collapseB1">
+                    <div class="panel-header-title">
+                      <div class="name-date">
+                        <span class="name">Николай Перепелица</span> |
+                        <span class="date">18.07</span>
+                      </div>
+                      <div class="quantity-delete">
+                        <span class="quantity">Количество сообщений в переписке <span>18</span></span>
+                        <button class="delete"><img src="img/cross.png" alt="#"> Удалить переписку</button>
+                      </div>
+                    </div>
+                    <div class="panel-header-content clearfix">
+                      <img src="img/author.png" class="img-responsive user-photo" alt="#">
+                      <div class="text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в</div>
+                    </div>
+                  </a>
+                </div>
+                <div id="collapseB1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <div class="man man1">
+                      <img src="img/author.png" class="img-responsive user-photo" alt="#">
+                      <div class="user-text">
+                        <div class="name-date">
+                          <span class="name">Дмитрий Перепелица</span> | <span class="date">02.01.2016</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacusaccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio</p>
+                      </div>
+                    </div>
+                    <div class="man man2">
+                      <img src="img/author.png" class="img-responsive user-photo" alt="#">
+                      <div class="user-text">
+                        <div class="name-date">
+                          <span class="name">Дмитрий Перепелица</span> | <span class="date">02.01.2016</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacusaccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio</p>
+                        <div class="buttons">
+                          <a href="#">ОТВЕТИТЬ</a>
+                          <a href="#">ЦИТИРОВАТЬ</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="man man1">
+                      <img src="img/author.png" class="img-responsive user-photo" alt="#">
+                      <div class="user-text">
+                        <div class="name-date">
+                          <span class="name">Дмитрий Перепелица</span> | <span class="date">02.01.2016</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacusaccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-header">
+                  <a data-toggle="collapse" aria-expanded="false" data-parent="#accordion3" href="#collapseB2">
+                    <div class="panel-header-title">
+                      <div class="name-date">
+                        <span class="name">Николай Перепелица</span> |
+                        <span class="date">18.07</span>
+                      </div>
+                      <div class="quantity-delete">
+                        <span class="quantity">Количество сообщений в переписке <span>18</span></span>
+                        <button class="delete"><img src="img/cross.png" alt="#"> Удалить переписку</button>
+                      </div>
+                    </div>
+                    <div class="panel-header-content clearfix">
+                      <img src="img/author.png" class="img-responsive user-photo" alt="#">
+                      <div class="text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в</div>
+                    </div>
+                  </a>
+                </div>
+                <div id="collapseB2" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <div class="man man1">
+                      <img src="img/author.png" class="img-responsive user-photo" alt="#">
+                      <div class="user-text">
+                        <div class="name-date">
+                          <span class="name">Дмитрий Перепелица</span> | <span class="date">02.01.2016</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacusaccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio</p>
+                      </div>
+                    </div>
+                    <div class="man man2">
+                      <img src="img/author.png" class="img-responsive user-photo" alt="#">
+                      <div class="user-text">
+                        <div class="name-date">
+                          <span class="name">Дмитрий Перепелица</span> | <span class="date">02.01.2016</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacusaccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio</p>
+                        <div class="buttons">
+                          <a href="#">ОТВЕТИТЬ</a>
+                          <a href="#">ЦИТИРОВАТЬ</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="man man1">
+                      <img src="img/author.png" class="img-responsive user-photo" alt="#">
+                      <div class="user-text">
+                        <div class="name-date">
+                          <span class="name">Дмитрий Перепелица</span> | <span class="date">02.01.2016</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacusaccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-header">
+                  <a data-toggle="collapse" aria-expanded="false" data-parent="#accordion3" href="#collapseB3">
+                    <div class="panel-header-title">
+                      <div class="name-date">
+                        <span class="name">Николай Перепелица</span> |
+                        <span class="date">18.07</span>
+                      </div>
+                      <div class="quantity-delete">
+                        <span class="quantity">Количество сообщений в переписке <span>18</span></span>
+                        <button class="delete"><img src="img/cross.png" alt="#"> Удалить переписку</button>
+                      </div>
+                    </div>
+                    <div class="panel-header-content clearfix">
+                      <img src="img/author.png" class="img-responsive user-photo" alt="#">
+                      <div class="text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в</div>
+                    </div>
+                  </a>
+                </div>
+                <div id="collapseB3" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <div class="man man1">
+                      <img src="img/author.png" class="img-responsive user-photo" alt="#">
+                      <div class="user-text">
+                        <div class="name-date">
+                          <span class="name">Дмитрий Перепелица</span> | <span class="date">02.01.2016</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacusaccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio</p>
+                      </div>
+                    </div>
+                    <div class="man man2">
+                      <img src="img/author.png" class="img-responsive user-photo" alt="#">
+                      <div class="user-text">
+                        <div class="name-date">
+                          <span class="name">Дмитрий Перепелица</span> | <span class="date">02.01.2016</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacusaccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio</p>
+                        <div class="buttons">
+                          <a href="#">ОТВЕТИТЬ</a>
+                          <a href="#">ЦИТИРОВАТЬ</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="man man1">
+                      <img src="img/author.png" class="img-responsive user-photo" alt="#">
+                      <div class="user-text">
+                        <div class="name-date">
+                          <span class="name">Дмитрий Перепелица</span> | <span class="date">02.01.2016</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacusaccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-header">
+                  <a data-toggle="collapse" aria-expanded="false" data-parent="#accordion3" href="#collapseB4">
+                    <div class="panel-header-title">
+                      <div class="name-date">
+                        <span class="name">Николай Перепелица</span> |
+                        <span class="date">18.07</span>
+                      </div>
+                      <div class="quantity-delete">
+                        <span class="quantity">Количество сообщений в переписке <span>18</span></span>
+                        <button class="delete"><img src="img/cross.png" alt="#"> Удалить переписку</button>
+                      </div>
+                    </div>
+                    <div class="panel-header-content clearfix">
+                      <img src="img/author.png" class="img-responsive user-photo" alt="#">
+                      <div class="text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в</div>
+                    </div>
+                  </a>
+                </div>
+                <div id="collapseB4" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <div class="man man1">
+                      <img src="img/author.png" class="img-responsive user-photo" alt="#">
+                      <div class="user-text">
+                        <div class="name-date">
+                          <span class="name">Дмитрий Перепелица</span> | <span class="date">02.01.2016</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacusaccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio</p>
+                      </div>
+                    </div>
+                    <div class="man man2">
+                      <img src="img/author.png" class="img-responsive user-photo" alt="#">
+                      <div class="user-text">
+                        <div class="name-date">
+                          <span class="name">Дмитрий Перепелица</span> | <span class="date">02.01.2016</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacusaccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio</p>
+                        <div class="buttons">
+                          <a href="#">ОТВЕТИТЬ</a>
+                          <a href="#">ЦИТИРОВАТЬ</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="man man1">
+                      <img src="img/author.png" class="img-responsive user-photo" alt="#">
+                      <div class="user-text">
+                        <div class="name-date">
+                          <span class="name">Дмитрий Перепелица</span> | <span class="date">02.01.2016</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacusaccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  //= tamplate/footer.html
+	<script src="js/main.js"></script>		
+</body>
+</html>

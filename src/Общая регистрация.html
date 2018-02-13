@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project</title>
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+	//= tamplate/nav.html
+	
+  <section class="links">
+    <div class="container">
+      <a href="#">Главная</a> <i class="fa fa-angle-right" aria-hidden="true"></i> 
+      <a href="#">Личный кабинет</a>
+    </div>
+  </section>
+  <section class="registration-page">
+    <div class="container">
+      <h2 class="section-title blue">СТРАНИЦА РЕГИСТРАЦИИ</h2>
+      <form action="#">
+        <div class="fields">
+          <div class="field-container">
+            <label for="name">Имя</label>
+            <div class="input-container"><input required type="text" placeholder="Николай"></div>
+          </div>
+          <div class="field-container">
+            <label for="name">E-mail</label>
+            <div class="input-container"><input required type="email" placeholder="Npmail@gmail.com"></div>
+          </div>
+          <div class="field-container">
+            <label for="name">Пароль</label>
+            <div class="input-container"><input required type="password" placeholder="12345678"></div>
+          </div>
+          <div class="field-container">
+            <label for="name">Повторите пароль</label>
+            <div class="input-container"><input required type="password" placeholder="12345678"></div>
+          </div>
+        </div>
+        <img src="img/capcha.png" class="img-responsive" alt="#">
+        <button type="submit"><img src="img/registrationButton.png" alt="#"></button>
+      </form>
+    </div>
+  </section>
+  
+  //= tamplate/footer.html
+	<script src="js/main.js"></script>		
+</body>
+</html>

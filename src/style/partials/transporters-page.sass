@@ -1,0 +1,62 @@
+.transporters-page
+  .hero
+    padding-top: 10px
+    padding-bottom: 10px
+    background: url(../img/heroBG4.png) center no-repeat
+    background-size: cover
+  .transporters-list
+    padding-top: 10px
+    padding-bottom: 80px
+    .transporter-list-element
+      padding-top: 10px
+      padding-bottom: 10px
+      border-bottom: 1px solid rgba(0, 0, 0, 0.29)
+      .transporter
+        display: flex
+        justify-content: space-between
+        text-align: center
+        @media(max-width: 767px)
+          flex-direction: column
+        &-element
+          @media(max-width: 767px)
+            margin-bottom: 10px
+          &-title
+            margin-bottom: 8px
+            font-size: 15px
+            color: #4b9792
+            @media(max-width: 767px)
+              margin-bottom: 0px
+          .car-img
+            margin: auto
+          .car-mark
+            color: #707171
+            font-size: 15px
+            font-family: 'Exo2-Medium'
+          .rating
+            color: #707171
+            font-size: 18px
+            font-family: 'Exo2-Medium'
+          .price
+            color: #fe792a
+            font-size: 18px
+            font-family: 'Exo2-Medium'
+          .to-basket
+            margin: auto
+      .transporter-text
+        margin-top: -90px
+        margin-left: 170px
+        position: relative
+        @media(max-width: 767px)
+          margin-top: 15px
+          margin-left: 0px
+        p
+          font-size: 12px
+          color: #707171
+          text-align: justify
+        .buttons
+          text-align: right
+          @media(max-width: 767px)
+            text-align: center
+          a
+            display: inline-block
+            margin-top: 7px
